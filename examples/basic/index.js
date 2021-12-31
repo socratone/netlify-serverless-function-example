@@ -3,7 +3,8 @@ const getData = async () => {
     const response = await fetch('/.netlify/functions/hello-world');
     const text = await response.text();
     return text;
-  } catch {
+  } catch (error) {
+    console.error(error);
     return '';
   }
 };
