@@ -1,4 +1,7 @@
 exports.handler = async (event, context, callback) => {
+  // httpMethod: 'GET' | 'PUT' 변수를 이용해서 GET 이외의 요청을 처리할 수 있다.
+  // const method = event.httpMethod;
+
   // Promise를 return 해야 한다.
   return {
     // CORS 에러 없이 모든 곳에서 접근 가능하게 하려면 아래처럼 headers 속성을 넣을 수 있다.
